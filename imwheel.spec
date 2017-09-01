@@ -21,7 +21,6 @@ Patch4:         imwheel-config_file_path.patch
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  libtool
-BuildRequires:  pkg-config
 BuildRequires:  pkgconfig(ice)
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xext)

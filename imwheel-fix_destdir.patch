@@ -9,7 +9,7 @@
 -	-[ -f /etc/X11/imwheelrc ] && mv /etc/X11/imwheelrc $(ETCDIR)/imwheelrc || true
 -	-[ -f $(ETCDIR)/imwheelrc ] && install -m 644 imwheelrc $(ETCDIR)/imwheelrc.new || install -m 644 imwheelrc $(ETCDIR)/imwheelrc
 +	$(mkinstalldirs) $(DESTDIR)$(ETCDIR)
-+	install -m 644 imwheelrc $(DESTDIR)$(ETCDIR)/imwheelrc
++	install -m 644 -p imwheelrc $(DESTDIR)$(ETCDIR)/imwheelrc
  
  extras: $(EXTRA_PROGRAMS)
  
